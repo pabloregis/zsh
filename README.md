@@ -82,9 +82,3 @@ mkcd meu-projeto
 ```
 
 Isso cria a pasta e entra nela automaticamente.
-
-## Repositório
-
-```text
-git@github.com:pabloregis/zsh.git
-```
