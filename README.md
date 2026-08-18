@@ -45,7 +45,10 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | Claude Code | `cc` / `cdc` |
 | Git | `zsh-pull` |
 | Skillshare e Git | `skillpush` |
+| `lsof` | `port` |
+| OpenSSL | `genpass` |
 | WSL no Windows | `open` / `wsl-restart` |
+| zoxide (opcional) | `z` / `zi` |
 
 ## Aliases
 
@@ -53,12 +56,17 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | --- | --- |
 | `..`, `...` | Navega um ou dois diretorios acima |
 | `open` | Abre o diretorio atual no Explorer do Windows |
+| `z`, `zi` | Navegam por diretorios frequentes ou por selecao interativa, com zoxide instalado |
 | `ls`, `ll` | Lista arquivos com cor; `ll` inclui detalhes e ocultos |
 | `cat`, `find`, `grep` | Usam `batcat`, `fdfind` e `rg` |
 | `vim` | Abre o Neovim |
 | `n`, `p` | Executam `npm run` e `pnpm run` |
 | `dc` | Executa `docker compose` |
 | `zsh-pull` | Atualiza este repositorio com `git pull` |
+| `gs`, `gd`, `gds` | Exibem status, diff e diff preparado do Git |
+| `glog` | Mostra o historico do Git em grafo |
+| `reload`, `zshrc` | Recarrega ou edita o `~/.zshrc` |
+| `dus`, `dfh` | Exibem o tamanho de um caminho e o uso dos discos |
 | `cc` | Retoma a ultima sessao do Claude Code |
 | `cdc` | Retoma Claude Code sem solicitar permissoes |
 | `wsl-restart` | Encerra todas as distribuicoes WSL em execucao |
@@ -72,6 +80,10 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | `pack` | `pack caminho` | Cria `caminho.tar.gz`. |
 | `unpack` | `unpack arquivo.tar.gz` | Extrai o arquivo no diretorio atual. |
 | `mkcd` | `mkcd diretorio` | Cria o diretorio e entra nele. |
+| `backup` | `backup caminho` | Cria uma copia com data e hora, preservando atributos. |
+| `biggest` | `biggest [quantidade]` | Mostra os 20 maiores itens do diretorio atual, ou a quantidade informada. |
+| `genpass` | `genpass [bytes]` | Gera uma senha Base64 com 24 bytes aleatorios por padrao. |
+| `port` | `port numero` | Mostra o processo que escuta na porta informada. |
 | `skillpush` | `skillpush` | Sincroniza skills, cria o commit em `~/.config/skillshare` e envia-o ao remoto. |
 
 ## Sincronizacao

@@ -15,6 +15,27 @@ mkcd() {
     mkdir -p "$1" && cd "$1"
 }
 
+backup() {
+    cp -a "$1" "$1.bak-$(date +%Y%m%d-%H%M%S)"
+}
+
+biggest() {
+    du -ah . | sort -rh | head -n "${1:-20}"
+}
+
+genpass() {
+    openssl rand -base64 "${1:-24}"
+}
+
+port() {
+    if [[ -z "$1" ]]; then
+        print -u2 'Uso: port <numero>'
+        return 1
+    fi
+
+    lsof -nP -iTCP:"$1" -sTCP:LISTEN
+}
+
 
 # ── Skillshare ─────────────────────────────────────────────────────────
 
