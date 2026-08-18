@@ -43,6 +43,7 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | `npm` / `pnpm` | `n` / `p` |
 | Docker Compose | `dc` |
 | Claude Code | `cc` / `cdc` |
+| Git | `zsh-pull` |
 | Skillshare e Git | `skillpush` |
 | WSL no Windows | `open` / `wsl-restart` |
 
@@ -57,6 +58,7 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | `vim` | Abre o Neovim |
 | `n`, `p` | Executam `npm run` e `pnpm run` |
 | `dc` | Executa `docker compose` |
+| `zsh-pull` | Atualiza este repositorio com `git pull` |
 | `cc` | Retoma a ultima sessao do Claude Code |
 | `cdc` | Retoma Claude Code sem solicitar permissoes |
 | `wsl-restart` | Encerra todas as distribuicoes WSL em execucao |
@@ -86,7 +88,7 @@ git push
 Em outro computador, atualize e recarregue o shell:
 
 ```bash
-git -C ~/.config/zsh pull
+zsh-pull
 source ~/.zshrc
 ```
 
