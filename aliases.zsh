@@ -1,16 +1,29 @@
+# ── Navegação ──────────────────────────────────────────────────────────
+alias ..='cd ..'
+alias ...='cd ../..'
+alias open='explorer.exe .'
+
+# ── Arquivos e busca ───────────────────────────────────────────────────
 alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias cat='batcat'
 alias find='fdfind'
 alias grep='rg'
+
+# ── Editor ─────────────────────────────────────────────────────────────
 alias vim='nvim'
-alias dc='docker compose'
-alias ..='cd ..'
-alias open='explorer.exe .'
-alias ...='cd ../..'
-alias wsl-restart='wsl.exe --shutdown'
-alias cdc='claude --dangerously-skip-permissions --continue'
-alias cc='claude --continue'
-alias p='pnpm run'
+
+# ── Node.js ────────────────────────────────────────────────────────────
 alias n='npm run'
-alias skillpush='skillshare sync && cd ~/.config/skillshare && skillshare commit && git push && cd -'
+alias p='pnpm run'
+
+# ── Docker ─────────────────────────────────────────────────────────────
+alias dc='docker compose'
+
+# ── Claude Code ────────────────────────────────────────────────────────
+alias cc='claude --continue'
+alias cdc='claude --dangerously-skip-permissions --continue'
+
+# ── WSL ────────────────────────────────────────────────────────────────
+# Encerra todas as distribuições WSL em execução.
+alias wsl-restart='wsl.exe --shutdown'
