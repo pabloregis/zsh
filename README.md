@@ -48,18 +48,19 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | `lsof` | `port` |
 | OpenSSL | `genpass` |
 | WSL no Windows | `open` / `wsl-restart` |
-| zoxide (opcional) | `z` / `zi` |
+| zoxide (opcional) | `z` / `zi` / `..` / `...` / `mkcd` |
+| `fzf` (opcional, com zoxide) | `zi` (busca interativa) |
 
 ## Aliases
 
 | Alias | Comando |
 | --- | --- |
-| `..`, `...` | Navega um ou dois diretorios acima |
+| `..`, `...` | Navega um ou dois diretorios acima; usa `z` (com fallback para `cd`) quando o zoxide esta instalado |
 | `open` | Abre o diretorio atual no Explorer do Windows |
 | `z`, `zi` | Navegam por diretorios frequentes ou por selecao interativa, com zoxide instalado |
 | `ls`, `ll` | Lista arquivos com cor; `ll` inclui detalhes e ocultos |
-| `cat`, `find`, `grep` | Usam `batcat`, `fdfind` e `rg` |
-| `vim` | Abre o Neovim |
+| `cat`, `find`, `grep` | Usam `batcat`, `fdfind` e `rg`, quando instalados |
+| `vim` | Abre o Neovim, quando instalado |
 | `n`, `p` | Executam `npm run` e `pnpm run` |
 | `dc` | Executa `docker compose` |
 | `zsh-pull` | Atualiza este repositorio com `git pull` |
@@ -79,7 +80,7 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | --- | --- | --- |
 | `pack` | `pack caminho` | Cria `caminho.tar.gz`. |
 | `unpack` | `unpack arquivo.tar.gz` | Extrai o arquivo no diretorio atual. |
-| `mkcd` | `mkcd diretorio` | Cria o diretorio e entra nele. |
+| `mkcd` | `mkcd diretorio` | Cria o diretorio e entra nele (via `z`, com fallback para `cd`). |
 | `backup` | `backup caminho` | Cria uma copia com data e hora, preservando atributos. |
 | `biggest` | `biggest [quantidade]` | Mostra os 20 maiores itens do diretorio atual, ou a quantidade informada. |
 | `genpass` | `genpass [bytes]` | Gera uma senha Base64 com 24 bytes aleatorios por padrao. |

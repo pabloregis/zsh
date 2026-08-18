@@ -1,22 +1,35 @@
 # ── Navegação ──────────────────────────────────────────────────────────
-alias ..='cd ..'
-alias ...='cd ../..'
 alias open='explorer.exe .'
 
-# Disponibiliza z e zi quando zoxide estiver instalado.
+# Disponibiliza z e zi quando zoxide estiver instalado; usa z em .. e ...
+# para que a navegação também alimente a frequência do zoxide.
 if (( $+commands[zoxide] )); then
     eval "$(zoxide init zsh)"
+    alias ..='z ..'
+    alias ...='z ../..'
+else
+    alias ..='cd ..'
+    alias ...='cd ../..'
 fi
 
 # ── Arquivos e busca ───────────────────────────────────────────────────
 alias ls='ls --color=auto'
 alias ll='ls -lah'
-alias cat='batcat'
-alias find='fdfind'
-alias grep='rg'
+
+if (( $+commands[batcat] )); then
+    alias cat='batcat'
+fi
+if (( $+commands[fdfind] )); then
+    alias find='fdfind'
+fi
+if (( $+commands[rg] )); then
+    alias grep='rg'
+fi
 
 # ── Editor ─────────────────────────────────────────────────────────────
-alias vim='nvim'
+if (( $+commands[nvim] )); then
+    alias vim='nvim'
+fi
 
 # ── Node.js ────────────────────────────────────────────────────────────
 alias n='npm run'
