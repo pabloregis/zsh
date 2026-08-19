@@ -34,6 +34,7 @@ fi
 # ── Node.js ────────────────────────────────────────────────────────────
 alias n='npm run'
 alias dev='npm run dev'
+alias test='npm run test:dev'
 alias ni='npm install'
 alias p='pnpm run'
 alias pi='pnpm install'
