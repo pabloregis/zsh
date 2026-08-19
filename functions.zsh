@@ -70,7 +70,7 @@ port() {
 skillpush() {
     (
         skillshare sync &&
-        cd ~/.config/skillshare &&
+        cd ~/.config/skillshare/skills &&
         skillshare commit &&
         git push
     )

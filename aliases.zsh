@@ -33,7 +33,11 @@ fi
 
 # ── Node.js ────────────────────────────────────────────────────────────
 alias n='npm run'
+alias dev='npm run dev'
+alias ni='npm install'
 alias p='pnpm run'
+alias pi='pnpm install'
+alias devp='pnpm run dev'
 
 # ── Docker ─────────────────────────────────────────────────────────────
 alias dc='docker compose'
