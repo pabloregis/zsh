@@ -45,7 +45,7 @@ alias dc='docker compose'
 
 # ── Git ────────────────────────────────────────────────────────────────
 alias zsh-pull='git -C ~/.config/zsh pull'
-alias gs='git status'
+alias gs='git fetch && git status'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias glog='git log --oneline --graph --decorate --all'
