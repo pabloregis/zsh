@@ -78,5 +78,5 @@ skillpush() {
 
 # ── Antigravity ─────────────────────────────────────────────────────────
 antigravity() {
-  nohup ~/.local/opt/antigravity/antigravity >/dev/null 2>&1 &
+  ~/.local/opt/antigravity/antigravity >/dev/null 2>&1 &!
 }
