@@ -56,6 +56,11 @@ alias zshrc='code ~/.zshrc'
 alias dus='du -sh'
 alias dfh='df -h'
 
+# ── Skillshare  ────────────────────────────────────────────────────────
+alias sui='skillshare ui'
+alias ssync='skillshare sync'
+alias spush='skillpush'
+
 # ── Claude Code ────────────────────────────────────────────────────────
 alias cc='claude --continue'
 alias cdc='claude --dangerously-skip-permissions --continue'
