@@ -77,6 +77,15 @@ skillpush() {
 }
 
 # ── Antigravity ─────────────────────────────────────────────────────────
-antigravity() {
-  ~/.local/opt/antigravity/antigravity >/dev/null 2>&1 &!
+ag() {
+  pkill -f ~/.local/opt/antigravity/antigravity
+  pkill -9 -x antigravity 2>/dev/null
+
+  "$HOME/.local/opt/antigravity/antigravity" \
+    >/tmp/antigravity.log 2>&1 &!
+}
+
+killag() {
+  pkill -f ~/.local/opt/antigravity/antigravity
+  pkill -9 -x antigravity 2>/dev/null
 }
