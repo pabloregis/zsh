@@ -20,7 +20,7 @@ if (( $+commands[batcat] )); then
     alias cat='batcat'
 fi
 if (( $+commands[fdfind] )); then
-    alias find='fdfind'
+    alias fd='fdfind'
 fi
 if (( $+commands[rg] )); then
     alias grep='rg'

@@ -75,3 +75,8 @@ skillpush() {
         git push
     )
 }
+
+# ── Antigravity ─────────────────────────────────────────────────────────
+antigravity() {
+  nohup ~/.local/opt/antigravity/antigravity >/dev/null 2>&1 &
+}
