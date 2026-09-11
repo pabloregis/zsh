@@ -42,7 +42,7 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | `nvim` | `vim` |
 | `npm` / `pnpm` | `n` / `p` |
 | Docker Compose | `dc` |
-| Claude Code | `cc` / `cdc` |
+| Claude Code | `cc` / `cdc` / `c1` / `c2` |
 | Git | `zsh-pull` |
 | Skillshare e Git | `skillpush` |
 | `lsof` | `port` |
@@ -86,6 +86,8 @@ O Zsh e necessario. Os atalhos abaixo so funcionam quando a respectiva ferrament
 | `genpass` | `genpass [bytes]` | Gera uma senha Base64 com 24 bytes aleatorios por padrao. |
 | `port` | `port numero` | Mostra o processo que escuta na porta informada. |
 | `skillpush` | `skillpush` | Sincroniza skills, cria o commit em `~/.config/skillshare` e envia-o ao remoto. |
+| `c1` | `c1 [args]` | Executa Claude Code com perfil principal (conta Pro). |
+| `c2` | `c2 [args]` | Executa Claude Code com perfil alternativo (conta Pro secundaria). |
 
 ## Sincronizacao
 
