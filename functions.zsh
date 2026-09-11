@@ -89,3 +89,23 @@ killag() {
   pkill -f ~/.local/opt/antigravity/antigravity
   pkill -9 -x antigravity 2>/dev/null
 }
+
+# ── Claude Code ─────────────────────────────────────────────────────────
+
+# Claude Code — Conta Pro principal
+c1() {
+  (
+    unset CLAUDE_SECURESTORAGE_CONFIG_DIR
+    export CLAUDE_PROFILE="Claude MAIN"
+    claude "$@"
+  )
+}
+
+# Claude Code — Conta Pro secundária
+c2() {
+  (
+    export CLAUDE_SECURESTORAGE_CONFIG_DIR="$HOME/.claude-auth/pro2"
+    export CLAUDE_PROFILE="Claude BACKUP"
+    claude "$@"
+  )
+}
