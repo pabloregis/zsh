@@ -61,6 +61,9 @@ alias sui='skillshare ui'
 alias ssync='skillshare sync'
 alias spush='skillpush'
 
+# ── Orca ────────────────────────────────────────────────────────
+alias orca='orca.exe'
+
 # ── Claude Code ────────────────────────────────────────────────────────
 alias cc='claude --continue'
 alias cdc='claude --dangerously-skip-permissions --continue'
